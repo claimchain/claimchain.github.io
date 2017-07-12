@@ -1,0 +1,42 @@
+---
+---
+
+$color-a: #eee;
+$color-b: #fff;
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Merriweather Sans', Arial, sans-serif;
+  font-size: 18px;
+}
+
+.jumbotron {
+  min-height: 20em;
+
+  h1 {
+    font-size: 300%;
+  }
+
+  h2 {
+    font-weight: 400;
+  }
+
+  .links, .btns {
+    font-size: 120%;
+  }
+}
+
+section.feature {
+  width: 100%;
+  min-height: 20em;
+  padding: 2em;
+
+  &:nth-child(2n) {
+    background: $color-a;
+  }
+
+  &:nth-child(2n + 1) {
+    background: $color-b;
+  }
+}
