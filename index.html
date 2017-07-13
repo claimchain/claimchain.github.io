@@ -11,7 +11,7 @@ description: >
 
     <title>{{ page.title }}</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -19,17 +19,17 @@ description: >
 
   <body class="m0">
 
-    <div class="max-width-6 m4 mx-auto">
+    <div class="max-width-4 m4 mx-auto">
       <div class="clearfix px2 jumbotron">
-        <div class="md-col-4 mx-auto">
+        <div class="md-col-10 lg-col-10 mx-auto">
           <h1 class="center">{{ page.title }}</h1>
           <h2>{{ page.description }}</h2>
           <div class="links">
             <i class="fa fa-github"></i>&nbsp;<a href="https://github.com/gdanezis/claimchain-core">Prototype implementation</a> <br>
-            <i class="fa fa-file-pdf-o"></i>&nbsp;<a href="http://oa.upm.es/47156/1/TFM_%20BOGDAN_KULYNYCH.pdf">Whitepaper</a> (Master's thesis) <br>
+            <i class="fa fa-file-pdf-o"></i>&nbsp;<a href="http://oa.upm.es/47156/1/TFM_%20BOGDAN_KULYNYCH.pdf">Paper</a> (Master's thesis) <br>
           </div>
           <div class="btns mt4">
-            <a id="twitter-wjs" class="twitter-share-button" href="https://twitter.com/intent/tweet?text={{ page.title }} -- {{ page.description }}. {{ page.url }}" data-size="large">Tweet</a> &nbsp;
+            <a id="twitter-wjs" class="twitter-share-button" href="https://twitter.com/intent/tweet?text={{ page.title }}: {{ page.description }} {{ page.url }}" data-size="large">Tweet</a> &nbsp;
             <iframe src="https://ghbtns.com/github-btn.html?user=gdanezis&repo=claimchain-core&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
           </div>
         </div>

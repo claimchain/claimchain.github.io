@@ -7,7 +7,7 @@ $color-b: #fff;
 * { box-sizing: border-box; }
 
 body {
-  font-family: 'Merriweather Sans', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 18px;
 }
 
@@ -24,6 +24,12 @@ body {
 
   .links, .btns {
     font-size: 120%;
+  }
+}
+
+.btns {
+  iframe {
+    vertical-align: middle;
   }
 }
 
