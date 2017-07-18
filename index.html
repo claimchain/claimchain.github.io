@@ -11,7 +11,7 @@ description: >
 
     <title>{{ page.title }}</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -25,8 +25,8 @@ description: >
           <h1 class="center">{{ page.title }}</h1>
           <h2>{{ page.description }}</h2>
           <div class="links">
-            <i class="fa fa-github"></i>&nbsp;<a href="https://github.com/gdanezis/claimchain-core">Prototype implementation</a> <br>
             <i class="fa fa-file-pdf-o"></i>&nbsp;<a href="paper.pdf">Paper</a> (not published) <br>
+            <i class="fa fa-github"></i>&nbsp;<a href="https://github.com/gdanezis/claimchain-core">Prototype implementation</a> <br>
           </div>
           <div class="btns mt4">
             <a id="twitter-wjs" class="twitter-share-button" href="https://twitter.com/intent/tweet?text={{ page.title }}: {{ page.description }} {{ page.url }}" data-size="large">Tweet</a> &nbsp;
@@ -42,8 +42,7 @@ description: >
     <div class="max-width-4 mx-auto">
       <div class="clearfix">
         <div class="col md-col-7 px2 center">
-          &nbsp;
-          <!-- CHAINS -->
+          <img src="claimchain.svg">
         </div>
         <div class="col md-col-5 px2">
           Each user or device maintains repositories of claims regarding their own key material, and their beliefs about public keys and, generally, state of other users of the system. High integrity of the repositories is maintained by virtue of storing claims on authenticated data structures, namely hash chains and Merkle trees, and their authenticity and non-repudiation by the use of digital signatures.
@@ -61,8 +60,7 @@ description: >
           Cross-referencing of hash chains is a way to efficiently and verifiably vouch about states of other users. This allows to detect chain compromises, manifested as forks of hash chains, and to implement various social policies for deriving decisions about the latest state of users in the system.
         </div>
         <div class="col md-col-7 px2 center">
-          &nbsp;
-          <!-- GRAPH -->
+          <img src="crossrefs.svg">
         </div>
       </div>
     </div>
@@ -74,8 +72,7 @@ description: >
     <div class="max-width-4 mx-auto">
       <div class="clearfix">
         <div class="col md-col-7 px2 center">
-          &nbsp;
-          <!-- MERKLE TREES -->
+          <img src="vrfs.svg">
         </div>
         <div class="col md-col-5 px2">
           The claims about keys of other people can reveal the social graph. To solve this, we use cryptographic verifiable random functions to derive private identifiers that are re-randomized on each chain update. This allows to openly and verifiably publish claims that can only be read by the authorized users, ensuring <i>privacy of the social graph</i>. Moreover, the specific construction of Merkle trees, along with the usage of verifiable random functions, ensures users <i>can not equivocate</i> about the state of other people.
@@ -93,8 +90,7 @@ description: >
           Claimchain is flexible with respect to deployment options, supporting fully decentralized deployments, as well as centralized, federated, and hybrid modes of operation.
         </div>
         <div class="col md-col-7 px2 center">
-          &nbsp;
-          <!-- CLOUDS -->
+          <img src="graph.svg">
         </div>
       </div>
     </div>

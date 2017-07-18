@@ -1,13 +1,13 @@
 ---
 ---
 
-$color-a: #eee;
+$color-a: #eaf8ff;
 $color-b: #fff;
 
 * { box-sizing: border-box; }
 
 body {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Fira Sans', Arial, sans-serif;
   font-size: 18px;
 }
 
@@ -45,6 +45,11 @@ section {
   padding: 2em;
 
   &.feature {
+    img {
+      padding: 1em;
+      max-height: 15em;
+    }
+
     &:nth-child(2n) {
       background: $color-a;
     }
