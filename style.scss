@@ -11,6 +11,12 @@ body {
   font-size: 18px;
 }
 
+abbr {
+	text-transform: lowercase;
+	font-variant: small-caps;
+	letter-spacing: 1px;
+}
+
 .jumbotron {
   min-height: 20em;
 
@@ -33,16 +39,27 @@ body {
   }
 }
 
-section.feature {
+section {
   width: 100%;
   min-height: 20em;
   padding: 2em;
 
-  &:nth-child(2n) {
-    background: $color-a;
+  &.feature {
+    &:nth-child(2n) {
+      background: $color-a;
+    }
+
+    &:nth-child(2n + 1) {
+      background: $color-b;
+    }
   }
 
-  &:nth-child(2n + 1) {
-    background: $color-b;
+  &.people {
+    ul {
+      list-style: none;
+      li {
+        min-height: 5em;
+      }
+    }
   }
 }
