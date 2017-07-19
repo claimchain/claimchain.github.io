@@ -50,6 +50,11 @@ section {
       max-height: 15em;
     }
 
+    .flex-center {
+      display: flex;
+      align-items: center;
+    }
+
     &:nth-child(2n) {
       background: $color-a;
     }
