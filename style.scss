@@ -50,9 +50,11 @@ section {
       max-height: 15em;
     }
 
-    .flex-center {
-      display: flex;
-      align-items: center;
+    @media screen and (min-width: 52em) {
+      .flex-center {
+        display: flex;
+        align-items: center;
+      }
     }
 
     &:nth-child(2n) {
@@ -65,6 +67,11 @@ section {
   }
 
   &.people {
+    @media screen and (max-width: 52em) {
+      & {
+        text-align: center;
+      }
+    }
     ul {
       list-style: none;
       li {
