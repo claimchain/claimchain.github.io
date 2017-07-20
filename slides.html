@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>ClaimChain</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <style>
+      * { box-sizing: border-box; }
+      html {
+        height: 100%;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        font-size: 22px;
+        font-family: "Fira Sans", Arial, sans-serif;
+      }
+      h1,h2 {
+        font-weight: 400;
+      }
+
+      .title {
+        padding: 3em;
+        text-align: center;
+      }
+      .title h1 {
+        font-size: 10em;
+      }
+      .title h2 {
+        font-size: 4em;
+      }
+
+      .info {
+        padding: 3em;
+        padding-top: 10%;
+        text-align: center;
+      }
+
+      .big {
+        font-size: 4em;
+      }
+      .underline {
+        text-transform: underline;
+      }
+
+      ul {
+        list-style: none;
+      }
+      .fotorama__caption {
+        font-family: "Fira Sans", Arial, sans-serif;
+        text-align: center;
+        font-size: 4em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fotorama"
+          data-width="100%"
+          data-height="100%"
+          data-transition="crossfade"
+          data-hash="true"
+          data-keyboard="true"
+          data-arrows="false"
+          data-click="true"
+          data-navposition="bottom">
+      <div class="title">
+        <h1>ClaimChain</h1>
+        <h2>Decentralized Public Key Infrastructure based on cross-referencing hash chains</h2>
+      </div>
+      <img src="sauron.jpg" data-fit="cover" data-caption="Centralized PKI">
+      <img src="claimchain.svg">
+      <img src="chains.svg">
+      <img src="crossrefs.svg">
+      <img src="vrfs.svg">
+      <div class="info">
+        <div>
+          <ul class="big">
+            <li>Python implementation</li>
+            <li>Technical report</li>
+          </ul>
+          <div class="big"><a href="https://claimchain.github.io">claimchain.github.io</a></div>
+        </div>
+      </div>
+      <div class="info">
+        <ul class="big">
+          <li>Bogdan Kulynych, IMDEA</li>
+          <li>Carmela Troncoso, IMDEA</li>
+          <li>Marios Isaakidis, UCL</li>
+          <li>George Danezis, UCL</li>
+        </ul>
+        <div class="big">Part of NEXTLEAP project: <a href="https://nextleap.eu">nextleap.eu</a></div>
+      </div>
+    </div>
+  </body>
+</html>
