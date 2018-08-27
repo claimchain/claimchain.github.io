@@ -22,28 +22,49 @@ description: >
 
     <div class="max-width-4 m4 mx-auto">
       <div class="clearfix px4 jumbotron">
-        <div class="md-col-8 mx-auto">
+        <div class="md-col-10 mx-auto">
           <h1 class="center">{{ page.title }}</h1>
           <h2>{{ page.description }}</h2>
           <div class="btns">
             <iframe src="https://ghbtns.com/github-btn.html?user=claimchain&repo=claimchain-core&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
           </div>
-          <h3 class="mt3">Papers</h3>
-          <div class="links">
-            <i class="fa fa-file-pdf-o"></i>&nbsp;<a href="https://arxiv.org/abs/1707.06279">Technical report</a> (arXiv)<br>
+          <h3 class="mt3">Paper</h3>
+          <ul class="links">
+            <li>
+                <i class="fa fa-file-pdf-o"></i>
+                <a href="https://arxiv.org/abs/1707.06279">ClaimChain: Improving the Security and Privacy of In-band Key Distribution for Messaging</a><br>
+                <small>Bogdan Kulynych, Wouter Lueks, Marios Isaakidis, George Danezis, and Carmela&nbsp;Troncoso.<br><em>To appear in 2018 Workshop on Privacy in the Electronic Society (WPES'18)</em>
+                </small>
+            </li>
+          </ul>
 
-          </div>
           <h3>Code</h3>
-          <div class="links">
-            <i class="fa fa-github"></i>&nbsp;<a href="https://github.com/claimchain/claimchain-core">Claimchain</a> prototype implementation in Python<br>
-            <i class="fa fa-github"></i>&nbsp;<a href="https://github.com/claimchain/claimchain-simulations">Reproducible simulations</a> on the <a href="https://www.cs.cmu.edu/~./enron/">Enron email dataset</a><br>
-            <i class="fa fa-github"></i>&nbsp;<a href="https://github.com/nextleap-project/muacryptcc">ClaimChain plugin</a> for <a href="https://github.com/hpk42/muacrypt">Muacrypt</a><br>
-            <i class="fa fa-github"></i>&nbsp;<a href="https://github.com/nextleap-project/verified-claimchain">Verified implementations</a> of underlying data structures<br>
-          </div>
-          <h3>Talks</h3>
-          <div class="links">
-            <i class="fa fa-file-video-o"></i>&nbsp;<a href="https://media.ccc.de/v/34c3-9094-modern_key_distribution_with_claimchain">Modern key distribution with ClaimChain</a> at 34C3<br>
-          </div>
+          <ul class="links">
+            <li>
+              <i class="fa fa-github"></i>
+              <a href="https://github.com/claimchain/claimchain-core">Claimchain</a> prototype implementation in Python
+            </li>
+            <li>
+              <i class="fa fa-github"></i>
+              <a href="https://github.com/claimchain/claimchain-simulations">Reproducible simulations</a> on the <a href="https://www.cs.cmu.edu/~./enron/">Enron email dataset</a>
+            </li>
+            <li>
+            <i class="fa fa-github"></i>
+              <a href="https://github.com/nextleap-project/muacryptcc">ClaimChain plugin</a> for <a href="https://github.com/hpk42/muacrypt">Muacrypt</a>
+            </li>
+            <li>
+              <i class="fa fa-github"></i>
+              <a href="https://github.com/nextleap-project/verified-claimchain">Verified implementations</a> of underlying data structures
+            </li>
+          </ul>
+
+          <h3 class="mt3">Talks</h3>
+          <ul class="links">
+            <li>
+              <i class="fa fa-file-video-o"></i>
+              <a href="https://media.ccc.de/v/34c3-9094-modern_key_distribution_with_claimchain">Modern key distribution with ClaimChain</a> at 34C3
+            </li>
+          </ul>
 
         </div>
       </div>
@@ -108,41 +129,22 @@ description: >
     </div>
 
     <section class="citing max-width-4 mx-auto border-top">
-        <div class="max-width-4 mx-auto">
+      <div class="max-width-4 mx-auto">
         <h3>Citing ClaimChain</h3>
         <pre>
 @article{claimchain,
-  title={ClaimChain: improving the security and privacy of in-band key distribution for messaging},
-  author={Kulynych, Bogdan and Isaakidis, Marios and Troncoso, Carmela and Danezis, George},
+  title={ {ClaimChain}: Improving the Security and Privacy
+         of In-band Key Distribution for Messaging},
+  author={Kulynych, Bogdan and Lueks, Wouter and Isaakidis,
+          Marios and Danezis, George and Troncoso, Carmela},
   journal={arXiv preprint arXiv:1707.06279},
   year={2017}
 }
         </pre>
-        </div>
-    </section>
-        
+      </div>
     </section>
 
     <section class="people max-width-4 mx-auto p4 border-top">
-      <ul class="clearfix">
-        <li class="md-col md-col-3 px2">
-          <a href="https://bogdankulynych.me">Bogdan Kulynych</a><br>
-          <div class="institution">EPFL SPRING Lab</div>
-        </li>
-        <li class="md-col md-col-3 px2">
-          <a href="http://marios.xyz">Marios Isaakidis</a>
-          <div class="institution">UCL</div>
-        </li>
-        <li class="md-col md-col-3 px2">
-          <a href="http://www.carmelatroncoso.com/">Carmela Troncoso</a>
-          <div class="institution">EPFL SPRING Lab</div>
-        </li>
-        <li class="md-col md-col-3 px2">
-          <a href="http://www0.cs.ucl.ac.uk/staff/g.danezis/">George Danezis</a>
-          <div class="institution">UCL</div>
-        </li>
-      </ul>
-
       <div class="center">
       This work is a part of <a href="https://nextleap.eu"><abbr>NEXTLEAP</abbr></a> project.
       </div>

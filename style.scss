@@ -31,6 +31,18 @@ abbr {
   .links, .btns {
     font-size: 120%;
   }
+    
+  .links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .links li {
+    padding-left: 1.3em;
+    i.fa {
+      margin-left: -1em;
+    }
+  }
 }
 
 .btns {
@@ -41,7 +53,7 @@ abbr {
 
 section {
   width: 100%;
-  min-height: 20em;
+  min-height: 5em;
   padding: 2em;
 
   &.feature {
@@ -80,3 +92,10 @@ section {
     }
   }
 }
+
+@media screen and (max-width: 52em) {
+  pre {
+    font-size: 70%;
+  }
+}
+
